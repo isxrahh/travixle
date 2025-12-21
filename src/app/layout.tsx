@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
-import {Toaster} from '@/components/ui/sonner'
+import { Toaster } from "sonner";
 
 const inter=Inter({subsets:["latin"]});
 
@@ -34,7 +34,11 @@ export default function RootLayout({
 
         <main>{children}</main>
       </div>
-      <Toaster/>
+      <Toaster
+      position="top-center"
+      richColors
+      closeButton
+      />
     </body>
     </html>
   );
