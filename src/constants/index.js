@@ -196,3 +196,85 @@ export const hotels = [
         imageUrl: "./assets/taj_palace.jpg",
     },
 ]
+
+export const destinations=[
+    {
+        id: 1,
+        name:"Amritsar, India",
+        description:"Home to the shimmering Golden Temple, where spiritual hymns and selfless service create a divine, peaceful atmosphere.",
+        imageUrl:"../assets/amritsar.jpg",
+    },{
+        id: 2,
+        name:"Amber Fort, Jaipur",
+        description:"A majestic sandstone citadel overlooking Maota Lake, blending Rajput bravery with intricate Mughal-style aesthetic beauty.",
+        imageUrl:"../assets/amber.webp",
+    },{
+        id: 3,
+        name:"Andaman, India",
+        description:"A tropical paradise of turquoise waters and white sands, hiding vibrant coral reefs beneath the gentle waves.",
+        imageUrl:"../assets/andaman.jpg",
+    },{
+        id: 4,
+        name:"Ajanta caves, Maharashtra",
+        description:"These ancient rock-cut masterpieces house exquisite Buddhist frescoes that have survived the passage of centuries.",
+        imageUrl:"../assets/caves.avif",
+    },{
+        id: 5,
+        name:"Great Wall of China",
+        description:"An awe-inspiring stone dragon snaking across misty mountains, echoing the grandeur of ancient imperial defense.",
+        imageUrl:"../assets/china.jpg",
+    },{
+        id: 6,
+        name:"Burj Khalifa, Dubai",
+        description:"A shimmering silver needle piercing the clouds, representing the absolute pinnacle of modern architectural ambition.",
+        imageUrl:"../assets/dubai.webp",
+    },{
+        id: 7,
+        name:"Pyramid Of Giza, Egypt",
+        description:"The last standing ancient wonder, these silent limestone giants hold the eternal secrets of pharaohs.",
+        imageUrl:"../assets/egypt.webp",
+    },{
+        id: 8,
+        name:"Taj Mahal, India",
+        description:"A breathtaking symphony in white marble, this poetry in stone stands as a timeless testament to eternal love.",
+        imageUrl:"../assets/india.webp",
+    },{
+        id: 9,
+        name:"Kerala",
+        description:"Known as God’s Own Country, where emerald backwaters wind through swaying palms and lush, misty tea plantations.",
+        imageUrl:"../assets/kerala.jpg",
+    },{
+        id: 10,
+        name:"Manali",
+        description:"A snow-capped Himalayan sanctuary offering adrenaline-pumping adventures and serene cedar forests for the soul-seeking traveler.",
+        imageUrl:"../assets/manali.jpg",
+    },{
+        id: 11,
+        name:"Statue of Liberty, New York",
+        description:"A colossal copper guardian in New York Harbor, lighting the way with the torch of freedom.",
+        imageUrl:"../assets/nyc.webp",
+    },{
+        id: 12,
+        name:"Eiffel Tower, Paris",
+        description:"Paris’s iron heartbeat, offering a romantic silhouette that transforms into a sparkling gold lattice at night.",
+        imageUrl:"../assets/paris.jpg",
+    },
+    {
+        id: 13,
+        name:"Qutub Minar, Delhi",
+        description:"A towering fluted masterpiece of Indo-Islamic architecture, standing as a brick-red sentinel of Delhi’s rich history.",
+        imageUrl:"../assets/qutub_minar.jpg",
+    },
+    {
+        id: 14,
+        name:"Sydney, Austrailia",
+        description:"A vibrant harbor city where the sails of the Opera House meet world-class surfing at Bondi Beach.",
+        imageUrl:"../assets/sydney.png",
+    },
+    {
+        id: 15,
+        name:"Udaipur, Rajasthan",
+        description:"The City of Lakes, where marble palaces float on shimmering waters, reflecting the timeless romance of Rajasthan.",
+        imageUrl:"../assets/udaipur.jpg",
+    },
+]
