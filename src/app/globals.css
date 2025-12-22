@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+*:focus {
+  outline: none !important;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

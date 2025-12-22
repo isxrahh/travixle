@@ -61,7 +61,6 @@ export default function Planner() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        {/* Hero Title */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
             AI Travel Planner
@@ -72,7 +71,6 @@ export default function Planner() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Input Form Card */}
           <Card className="backdrop-blur-md bg-white/80 border-0 shadow-2xl">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
@@ -84,7 +82,6 @@ export default function Planner() {
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              {/* Destination */}
               <div className="space-y-2">
                 <Label className="flex items-center gap-2 text-indigo-700 font-medium pb-2">
                   <MapPin className="w-5 h-5" />
@@ -97,8 +94,6 @@ export default function Planner() {
                   className="h-12 text-lg border-gray-200 focus:border-indigo-400 focus:ring-indigo-400 mb-2"
                 />
               </div>
-
-              {/* Days */}
               <div className="space-y-2">
                 <Label className="flex items-center gap-2 text-purple-700 font-medium pb-2">
                   <CalendarDays className="w-5 h-5" />
@@ -114,8 +109,6 @@ export default function Planner() {
                   className="h-12 text-lg mb-2"
                 />
               </div>
-
-              {/* Budget */}
               <div className="space-y-4 pt-2">
                 <Label className="flex items-center gap-2 text-green-700 font-medium">
                   <DollarSign className="w-5 h-5" />
@@ -132,8 +125,6 @@ export default function Planner() {
                   </SelectContent>
                 </Select>
               </div>
-
-              {/* Preferences */}
               <div className="space-y-4 py-2">
                 <Label className="flex items-center gap-2 text-pink-700 font-medium">
                   <Heart className="w-5 h-5" />
@@ -152,8 +143,6 @@ export default function Planner() {
                   Separate multiple preferences with commas
                 </p>
               </div>
-
-              {/* Generate Button */}
               <Button
                 onClick={generatePlan}
                 disabled={loading}
@@ -175,7 +164,6 @@ export default function Planner() {
             </CardContent>
           </Card>
 
-          {/* Itinerary Output Card */}
           <Card className="backdrop-blur-md bg-white/80 border-0 shadow-2xl overflow-hidden">
             <CardHeader>
               <CardTitle className="text-2xl flex items-center gap-3">
