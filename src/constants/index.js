@@ -49,7 +49,7 @@ export const offers = [
         description: "Use code on bookings above ₹5000",
         badge: "20% OFF",
         category: "Flights",
-        imageUrl:"./assets/flights-1.jpg",
+        imageUrl: "./assets/flights-1.jpg",
     },
     {
         id: 2,
@@ -58,7 +58,7 @@ export const offers = [
         description: "Valid on Emirates, Qatar & more",
         badge: "₹10K OFF",
         category: "Flights",
-        imageUrl:"./assets/flights-2.jpg",
+        imageUrl: "./assets/flights-2.jpg",
     },
     {
         id: 3,
@@ -67,7 +67,7 @@ export const offers = [
         description: "For bookings with 3+ nights",
         badge: "15% OFF",
         category: "Hotels",
-        imageUrl:"./assets/hotels-1.jpg",
+        imageUrl: "./assets/hotels-1.jpg",
 
     },
     {
@@ -77,7 +77,7 @@ export const offers = [
         description: "Limited period offer",
         badge: "ZERO FEE",
         category: "Trains",
-        imageUrl:"./assets/trains-1.jpg",
+        imageUrl: "./assets/trains-1.jpg",
 
     },
     {
@@ -87,7 +87,7 @@ export const offers = [
         description: "Min booking ₹20,000",
         badge: "₹2K BACK",
         category: "Packages",
-        imageUrl:"./assets/package.jpg",
+        imageUrl: "./assets/package.jpg",
 
     },
 
@@ -98,7 +98,7 @@ export const offers = [
         description: "No convenience fee this season",
         code: "NOFEE",
         category: "Trains",
-        imageUrl:"./assets/trains-2.jpg",
+        imageUrl: "./assets/trains-2.jpg",
 
     },
     {
@@ -108,7 +108,7 @@ export const offers = [
         description: "One-way & round trip rides",
         code: "CABS1000",
         category: "Cabs",
-        imageUrl:"./assets/cabs.jpg",
+        imageUrl: "./assets/cabs.jpg",
 
     },
     {
@@ -118,7 +118,7 @@ export const offers = [
         description: "Things to do worldwide • Code: WELCOME",
         code: "WELCOME",
         category: "Activities",
-        imageUrl:"./assets/activities.jpg",
+        imageUrl: "./assets/activities.jpg",
 
     },
     {
@@ -128,7 +128,7 @@ export const offers = [
         description: "Luxury hotels with festive deals",
         code: "LUXE55",
         category: "Hotels",
-        imageUrl:"./assets/hotels-2.jpg",
+        imageUrl: "./assets/hotels-2.jpg",
 
     },
     {
@@ -138,7 +138,7 @@ export const offers = [
         description: "Cozy stays with extra savings",
         code: "STAY15",
         category: "Stays",
-        imageUrl:"./assets/stays.jpg",
+        imageUrl: "./assets/stays.jpg",
 
     },
 ];
@@ -154,4 +154,45 @@ export const viewtabs = [
     { label: "Bus" },
     { label: "Forex" },
     { label: "MORE", hasChevron: true },
+]
+
+export const airlines = [
+    {
+        id: 1,
+        name: "AirAsia",
+        imageUrl: "./assets/airasia.png",
+    },
+    {
+        id: 2,
+        name: "Indigo",
+        imageUrl: "./assets/indigo.png",
+    },
+    {
+        id: 3,
+        name: "Singapore Airlines",
+        imageUrl: "./assets/singaporeairlines.png",
+    },
+]
+
+export const hotels = [
+    {
+        id: 1,
+        title: "ITC Sonar",
+        imageUrl: "./assets/itc_sonar.png",
+    },
+    {
+        id: 2,
+        title: "JW Marriott Hotel",
+        imageUrl: "./assets/jw_marriott.jpg",
+    },
+    {
+        id: 3,
+        title: "Hyatt Regency",
+        imageUrl: "./assets/hyatt_regency.jpg",
+    },
+    {
+        id: 4,
+        title: "Taj Palace",
+        imageUrl: "./assets/taj_palace.jpg",
+    },
 ]
