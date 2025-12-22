@@ -197,84 +197,163 @@ export const hotels = [
     },
 ]
 
-export const destinations=[
+export const destinations = [
     {
         id: 1,
-        name:"Amritsar, India",
-        description:"Home to the shimmering Golden Temple, where spiritual hymns and selfless service create a divine, peaceful atmosphere.",
-        imageUrl:"../assets/amritsar.jpg",
-    },{
+        name: "Amritsar, India",
+        description: "Home to the shimmering Golden Temple, where spiritual hymns and selfless service create a divine, peaceful atmosphere.",
+        imageUrl: "../assets/amritsar.jpg",
+        badge: "TOP 5",
+    }, {
         id: 2,
-        name:"Amber Fort, Jaipur",
-        description:"A majestic sandstone citadel overlooking Maota Lake, blending Rajput bravery with intricate Mughal-style aesthetic beauty.",
-        imageUrl:"../assets/amber.webp",
-    },{
+        name: "Amber Fort, Jaipur",
+        description: "A majestic sandstone citadel overlooking Maota Lake, blending Rajput bravery with intricate Mughal-style aesthetic beauty.",
+        imageUrl: "../assets/amber.webp",
+        badge: "TOP 8",
+
+    }, {
         id: 3,
-        name:"Andaman, India",
-        description:"A tropical paradise of turquoise waters and white sands, hiding vibrant coral reefs beneath the gentle waves.",
-        imageUrl:"../assets/andaman.jpg",
-    },{
+        name: "Andaman, India",
+        description: "A tropical paradise of turquoise waters and white sands, hiding vibrant coral reefs beneath the gentle waves.",
+        imageUrl: "../assets/andaman.jpg",
+        badge: "TOP 9",
+
+    }, {
         id: 4,
-        name:"Ajanta caves, Maharashtra",
-        description:"These ancient rock-cut masterpieces house exquisite Buddhist frescoes that have survived the passage of centuries.",
-        imageUrl:"../assets/caves.avif",
-    },{
+        name: "Ajanta caves, Maharashtra",
+        description: "These ancient rock-cut masterpieces house exquisite Buddhist frescoes that have survived the passage of centuries.",
+        imageUrl: "../assets/caves.avif",
+        badge: "TOP 12",
+
+    }, {
         id: 5,
-        name:"Great Wall of China",
-        description:"An awe-inspiring stone dragon snaking across misty mountains, echoing the grandeur of ancient imperial defense.",
-        imageUrl:"../assets/china.jpg",
-    },{
+        name: "Great Wall of China",
+        description: "An awe-inspiring stone dragon snaking across misty mountains, echoing the grandeur of ancient imperial defense.",
+        imageUrl: "../assets/china.jpg",
+        badge: "TOP 3",
+
+    }, {
         id: 6,
-        name:"Burj Khalifa, Dubai",
-        description:"A shimmering silver needle piercing the clouds, representing the absolute pinnacle of modern architectural ambition.",
-        imageUrl:"../assets/dubai.webp",
-    },{
+        name: "Burj Khalifa, Dubai",
+        description: "A shimmering silver needle piercing the clouds, representing the absolute pinnacle of modern architectural ambition.",
+        imageUrl: "../assets/dubai.webp",
+        badge: "TOP 4",
+
+    }, {
         id: 7,
-        name:"Pyramid Of Giza, Egypt",
-        description:"The last standing ancient wonder, these silent limestone giants hold the eternal secrets of pharaohs.",
-        imageUrl:"../assets/egypt.webp",
-    },{
+        name: "Pyramid Of Giza, Egypt",
+        description: "The last standing ancient wonder, these silent limestone giants hold the eternal secrets of pharaohs.",
+        imageUrl: "../assets/egypt.webp",
+        badge: "TOP 10",
+
+    }, {
         id: 8,
-        name:"Taj Mahal, India",
-        description:"A breathtaking symphony in white marble, this poetry in stone stands as a timeless testament to eternal love.",
-        imageUrl:"../assets/india.webp",
-    },{
+        name: "Taj Mahal, India",
+        description: "A breathtaking symphony in white marble, this poetry in stone stands as a timeless testament to eternal love.",
+        imageUrl: "../assets/india.webp",
+        badge: "TOP 2",
+
+    }, {
         id: 9,
-        name:"Kerala",
-        description:"Known as God’s Own Country, where emerald backwaters wind through swaying palms and lush, misty tea plantations.",
-        imageUrl:"../assets/kerala.jpg",
-    },{
+        name: "Kerala",
+        description: "Known as God’s Own Country, where emerald backwaters wind through swaying palms and lush, misty tea plantations.",
+        imageUrl: "../assets/kerala.jpg",
+        badge: "TOP 14",
+
+    }, {
         id: 10,
-        name:"Manali",
-        description:"A snow-capped Himalayan sanctuary offering adrenaline-pumping adventures and serene cedar forests for the soul-seeking traveler.",
-        imageUrl:"../assets/manali.jpg",
-    },{
+        name: "Manali",
+        description: "A snow-capped Himalayan sanctuary offering adrenaline-pumping adventures and serene cedar forests for the soul-seeking traveler.",
+        imageUrl: "../assets/manali.jpg",
+        badge: "TOP 7",
+
+    }, {
         id: 11,
-        name:"Statue of Liberty, New York",
-        description:"A colossal copper guardian in New York Harbor, lighting the way with the torch of freedom.",
-        imageUrl:"../assets/nyc.webp",
-    },{
+        name: "Statue of Liberty, New York",
+        description: "A colossal copper guardian in New York Harbor, lighting the way with the torch of freedom.",
+        imageUrl: "../assets/nyc.webp",
+        badge: "TOP 15",
+
+    }, {
         id: 12,
-        name:"Eiffel Tower, Paris",
-        description:"Paris’s iron heartbeat, offering a romantic silhouette that transforms into a sparkling gold lattice at night.",
-        imageUrl:"../assets/paris.jpg",
+        name: "Eiffel Tower, Paris",
+        description: "Paris’s iron heartbeat, offering a romantic silhouette that transforms into a sparkling gold lattice at night.",
+        imageUrl: "../assets/paris.jpg",
+        badge: "TOP 6",
+
     },
     {
         id: 13,
-        name:"Qutub Minar, Delhi",
-        description:"A towering fluted masterpiece of Indo-Islamic architecture, standing as a brick-red sentinel of Delhi’s rich history.",
-        imageUrl:"../assets/qutub_minar.jpg",
+        name: "Qutub Minar, Delhi",
+        description: "A towering fluted masterpiece of Indo-Islamic architecture, standing as a brick-red sentinel of Delhi’s rich history.",
+        imageUrl: "../assets/qutub_minar.jpg",
+        badge: "TOP 12",
+
     },
     {
         id: 14,
-        name:"Sydney, Austrailia",
-        description:"A vibrant harbor city where the sails of the Opera House meet world-class surfing at Bondi Beach.",
-        imageUrl:"../assets/sydney.png",
+        name: "Sydney, Austrailia",
+        description: "A vibrant harbor city where the sails of the Opera House meet world-class surfing at Bondi Beach.",
+        imageUrl: "../assets/sydney.png",
+        badge: "TOP 9",
+
     },
     {
         id: 15,
-        name:"Udaipur, Rajasthan",
-        description:"The City of Lakes, where marble palaces float on shimmering waters, reflecting the timeless romance of Rajasthan.",
-        imageUrl:"../assets/udaipur.jpg",
+        name: "Udaipur, Rajasthan",
+        description: "The City of Lakes, where marble palaces float on shimmering waters, reflecting the timeless romance of Rajasthan.",
+        imageUrl: "../assets/udaipur.jpg",
+        badge: "TOP 1",
+
+    },
+]
+
+export const wonders = [
+    {
+        id: 1,
+        name: "Tamil Nadu's Charming Hill Town",
+        imageUrl:"../assets/tn.avif",
+    },
+    {
+        id: 2,
+        name: "Picturesque Gateway to Himalayas",
+        imageUrl:"../assets/himalayas.avif",
+
+    },
+    {
+        id: 3,
+        name: "Quaint Little Hill Station in Gujarat",
+        imageUrl:"../assets/gujarat.avif",
+
+    },
+    {
+        id: 4,
+        name: "A pleasant summer retreat and a snowy winter wonderland!",
+        imageUrl:"../assets/wonderland.avif",
+
+    },
+    {
+        id: 5,
+        name: "Seaside Resort Village in West Bengal",
+        imageUrl:"../assets/wb.avif",
+
+    },
+    {
+        id: 6,
+        name: "Hidden Gem along Maharashtra's Coast",
+        imageUrl:"../assets/maharashtra.avif",
+
+    },
+    {
+        id: 7,
+        name: "Picture-Perfect Hill Station in Tamil Nadu",
+        imageUrl:"../assets/tn-2.webp",
+
+    },
+    {
+        id: 8,
+        name: "Hill Retreat in Andhra Pradesh",
+        imageUrl:"../assets/ap.avif",
+
     },
 ]

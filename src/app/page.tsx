@@ -6,6 +6,7 @@ import OffersCard from "@/components/OffersCard";
 import MainSection from "@/components/MainSection";
 import Navbar from "@/components/Navbar";
 import TripPlanner from "@/components/TripPlanner";
+import WonderIndia from "@/components/WonderIndia";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <OffersCard />
       <MainSection />
       <TripPlanner/>
+      <WonderIndia/>
     </>
   );
 }

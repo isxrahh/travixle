@@ -8,15 +8,16 @@ import {
 } from "@/components/ui/carousel";
 import { Button } from "./ui/button";
 import { destinations } from "@/constants";
+import { Badge } from "./ui/badge";
 
 const TripPlanner = () => {
   return (
-    <div className="space-y-4 p-32">
+    <div className="space-y-4 px-32 py-22">
       <h1 className="text-gray-800 text-3xl font-bold">
         Quick and easy trip planner
       </h1>
       <h3 className="text-gray-500">
-        Pick a vibe and explore the top destinations in India.
+        Pick a vibe and explore the top destinations in the world.
       </h3>
       <div className="mt-6 mb-12">
         <Button
@@ -72,6 +73,7 @@ const TripPlanner = () => {
 
                     <CardContent className="flex flex-col justify-between flex-grow p-6 md:py-2 bg-white relative -top-8">
                       <div>
+                        <Badge variant="default" className="px-4 py-1 mb-4">{item.badge}</Badge>
                         <h3 className="text-2xl md:text-xl font-bold text-gray-900 mb-3 leading-tight">
                           {item.name}
                         </h3>
@@ -86,8 +88,8 @@ const TripPlanner = () => {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious className="left-4 md:left-8 bg-white/90 hover:bg-white shadow-xl" />
-          <CarouselNext className="right-4 md:right-8 bg-white/90 hover:bg-white shadow-xl" />
+          <CarouselPrevious className="-left-12 -md:left-8 bg-white/90 hover:bg-white shadow-xl" />
+          <CarouselNext className="-right-12 -md:right-8 bg-white/90 hover:bg-white shadow-xl" />
         </Carousel>
       </div>
     </div>
