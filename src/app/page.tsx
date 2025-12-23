@@ -7,6 +7,11 @@ import MainSection from "@/components/MainSection";
 import Navbar from "@/components/Navbar";
 import TripPlanner from "@/components/TripPlanner";
 import WonderIndia from "@/components/WonderIndia";
+import TrendingCities from "@/components/TrendingCities";
+import PropertyType from "@/components/PropertyType";
+import MidSection from "@/components/MidSection";
+import EndSection from "@/components/EndSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +26,11 @@ export default function Home() {
       <MainSection />
       <TripPlanner/>
       <WonderIndia/>
+      <TrendingCities/>
+      <PropertyType/>
+      <MidSection/>
+      <EndSection/>
+      <Footer/>
     </>
   );
 }
