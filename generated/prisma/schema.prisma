@@ -18,6 +18,7 @@ model User {
   accounts      Account[]
   bookings      Booking[]
   sessions      Session[]
+  passwordHash  String?
 
   @@map("users")
 }
