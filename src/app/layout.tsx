@@ -49,7 +49,7 @@ export default function RootLayout({
                     Register
                   </a>
                   <a
-                    href="/auth/sign-in"
+                    href="/auth/signin"
                     className="text-gray-700 hover:text-indigo-600"
                   >
                     Login

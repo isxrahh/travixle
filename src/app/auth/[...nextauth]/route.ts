@@ -61,3 +61,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   },
   secret: process.env.NEXTAUTH_SECRET,
 });
+
+// Add these two lines at the end of the file
+export const GET = handlers.GET;
+export const POST = handlers.POST;
