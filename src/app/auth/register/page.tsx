@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
+import { signIn } from "next-auth/react";
 import {
   Select,
   SelectContent,
@@ -104,48 +105,38 @@ export default function RegisterPage() {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!formData.terms) {
-      setError("You must accept the terms and privacy policy");
-      return;
-    }
-    setIsLoading(true);
-    setError("");
-    setSuccess(""); // Clear previous success
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!formData.terms) {
+    setError("You must accept the terms and privacy policy");
+    return;
+  }
+  setIsLoading(true);
+  setError("");
+  setSuccess("");
 
-    const { firstName, lastName, email, password } = formData;
-    const name = `${firstName} ${lastName}`.trim();
+  const { firstName, lastName, email, password } = formData;
+  const name = `${firstName} ${lastName}`.trim();
 
-    const res = await fetch("/api/register", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, password }),
-    });
+  const res = await fetch("/api/register", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, password }),
+  });
 
-    const data = await res.json();
-    setIsLoading(false);
+  const data = await res.json();
+  setIsLoading(false);
 
-    if (res.ok) {
-      setSuccess("Account created successfully! Signing you in...");
+  if (res.ok) {
+    setSuccess("Account created successfully! Redirecting to sign in...");
+    setTimeout(() => {
+      router.push("/auth/signin");
+    }, 2000);
+  } else {
+    setError(data.error || "Registration failed");
+  }
+};
 
-      const signInRes = await fetch("/api/auth/callback/credentials", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, password }),
-      });
-
-      if (signInRes.ok) {
-        // Brief delay to show success message, then redirect
-        setTimeout(() => {
-          router.push("/");
-          router.refresh();
-        }, 1500);
-      }
-    } else {
-      setError(data.error || "Something went wrong");
-    }
-  };
   return (
     <div className="min-h-screen bg-gradient-to-r from-cyan-900 to-cyan-700 flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0">

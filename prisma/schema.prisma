@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -18,7 +17,7 @@ model User {
   accounts      Account[]
   bookings      Booking[]
   sessions      Session[]
-  passwordHash  String?
+  passwordHash  String
 
   @@map("users")
 }

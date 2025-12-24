@@ -8,7 +8,10 @@ export async function POST(request: Request) {
     const { name, email, password } = await request.json();
 
     if (!name || !email || !password) {
-      return NextResponse.json({ error: "All fields are required" }, { status: 400 });
+      return NextResponse.json(
+        { error: "All fields are required" },
+        { status: 400 }
+      );
     }
 
     const existingUser = await prisma.user.findUnique({
@@ -16,7 +19,10 @@ export async function POST(request: Request) {
     });
 
     if (existingUser) {
-      return NextResponse.json({ error: "Email already exists" }, { status: 409 });
+      return NextResponse.json(
+        { error: "Email already exists" },
+        { status: 409 }
+      );
     }
 
     const passwordHash = await bcrypt.hash(password, 10);
@@ -31,8 +37,12 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ success: true });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Registration error:", error);
-    return NextResponse.json({ error: "Registration failed" }, { status: 500 });
+    console.error("Error code:", error.code); // e.g., P2002 for unique violation
+    return NextResponse.json(
+      { error: "Registration failed", details: error.message },
+      { status: 500 }
+    );
   }
 }
