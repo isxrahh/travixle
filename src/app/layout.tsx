@@ -43,13 +43,13 @@ export default function RootLayout({
                     My Trips
                   </a>
                   <a
-                    href="/sign-up"
+                    href="/auth/register"
                     className="text-gray-700 hover:text-indigo-600"
                   >
                     Register
                   </a>
                   <a
-                    href="/sign-in"
+                    href="/auth/sign-in"
                     className="text-gray-700 hover:text-indigo-600"
                   >
                     Login

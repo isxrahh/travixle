@@ -127,7 +127,8 @@ exports.Prisma.UserScalarFieldEnum = {
   emailVerified: 'emailVerified',
   image: 'image',
   geniusLevel: 'geniusLevel',
-  joinDate: 'joinDate'
+  joinDate: 'joinDate',
+  passwordHash: 'passwordHash'
 };
 
 exports.Prisma.AccountScalarFieldEnum = {

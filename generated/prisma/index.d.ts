@@ -1302,6 +1302,7 @@ export namespace Prisma {
     image: string | null
     geniusLevel: number | null
     joinDate: Date | null
+    passwordHash: string | null
   }
 
   export type UserMaxAggregateOutputType = {
@@ -1312,6 +1313,7 @@ export namespace Prisma {
     image: string | null
     geniusLevel: number | null
     joinDate: Date | null
+    passwordHash: string | null
   }
 
   export type UserCountAggregateOutputType = {
@@ -1322,6 +1324,7 @@ export namespace Prisma {
     image: number
     geniusLevel: number
     joinDate: number
+    passwordHash: number
     _all: number
   }
 
@@ -1342,6 +1345,7 @@ export namespace Prisma {
     image?: true
     geniusLevel?: true
     joinDate?: true
+    passwordHash?: true
   }
 
   export type UserMaxAggregateInputType = {
@@ -1352,6 +1356,7 @@ export namespace Prisma {
     image?: true
     geniusLevel?: true
     joinDate?: true
+    passwordHash?: true
   }
 
   export type UserCountAggregateInputType = {
@@ -1362,6 +1367,7 @@ export namespace Prisma {
     image?: true
     geniusLevel?: true
     joinDate?: true
+    passwordHash?: true
     _all?: true
   }
 
@@ -1459,6 +1465,7 @@ export namespace Prisma {
     image: string | null
     geniusLevel: number
     joinDate: Date
+    passwordHash: string | null
     _count: UserCountAggregateOutputType | null
     _avg: UserAvgAggregateOutputType | null
     _sum: UserSumAggregateOutputType | null
@@ -1488,6 +1495,7 @@ export namespace Prisma {
     image?: boolean
     geniusLevel?: boolean
     joinDate?: boolean
+    passwordHash?: boolean
     accounts?: boolean | User$accountsArgs<ExtArgs>
     bookings?: boolean | User$bookingsArgs<ExtArgs>
     sessions?: boolean | User$sessionsArgs<ExtArgs>
@@ -1502,6 +1510,7 @@ export namespace Prisma {
     image?: boolean
     geniusLevel?: boolean
     joinDate?: boolean
+    passwordHash?: boolean
   }, ExtArgs["result"]["user"]>
 
   export type UserSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
@@ -1512,6 +1521,7 @@ export namespace Prisma {
     image?: boolean
     geniusLevel?: boolean
     joinDate?: boolean
+    passwordHash?: boolean
   }, ExtArgs["result"]["user"]>
 
   export type UserSelectScalar = {
@@ -1522,9 +1532,10 @@ export namespace Prisma {
     image?: boolean
     geniusLevel?: boolean
     joinDate?: boolean
+    passwordHash?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "email" | "emailVerified" | "image" | "geniusLevel" | "joinDate", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "name" | "email" | "emailVerified" | "image" | "geniusLevel" | "joinDate" | "passwordHash", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     accounts?: boolean | User$accountsArgs<ExtArgs>
     bookings?: boolean | User$bookingsArgs<ExtArgs>
@@ -1549,6 +1560,7 @@ export namespace Prisma {
       image: string | null
       geniusLevel: number
       joinDate: Date
+      passwordHash: string | null
     }, ExtArgs["result"]["user"]>
     composites: {}
   }
@@ -1982,6 +1994,7 @@ export namespace Prisma {
     readonly image: FieldRef<"User", 'String'>
     readonly geniusLevel: FieldRef<"User", 'Int'>
     readonly joinDate: FieldRef<"User", 'DateTime'>
+    readonly passwordHash: FieldRef<"User", 'String'>
   }
     
 
@@ -6809,7 +6822,8 @@ export namespace Prisma {
     emailVerified: 'emailVerified',
     image: 'image',
     geniusLevel: 'geniusLevel',
-    joinDate: 'joinDate'
+    joinDate: 'joinDate',
+    passwordHash: 'passwordHash'
   };
 
   export type UserScalarFieldEnum = (typeof UserScalarFieldEnum)[keyof typeof UserScalarFieldEnum]
@@ -6965,6 +6979,7 @@ export namespace Prisma {
     image?: StringNullableFilter<"User"> | string | null
     geniusLevel?: IntFilter<"User"> | number
     joinDate?: DateTimeFilter<"User"> | Date | string
+    passwordHash?: StringNullableFilter<"User"> | string | null
     accounts?: AccountListRelationFilter
     bookings?: BookingListRelationFilter
     sessions?: SessionListRelationFilter
@@ -6978,6 +6993,7 @@ export namespace Prisma {
     image?: SortOrderInput | SortOrder
     geniusLevel?: SortOrder
     joinDate?: SortOrder
+    passwordHash?: SortOrderInput | SortOrder
     accounts?: AccountOrderByRelationAggregateInput
     bookings?: BookingOrderByRelationAggregateInput
     sessions?: SessionOrderByRelationAggregateInput
@@ -6994,6 +7010,7 @@ export namespace Prisma {
     image?: StringNullableFilter<"User"> | string | null
     geniusLevel?: IntFilter<"User"> | number
     joinDate?: DateTimeFilter<"User"> | Date | string
+    passwordHash?: StringNullableFilter<"User"> | string | null
     accounts?: AccountListRelationFilter
     bookings?: BookingListRelationFilter
     sessions?: SessionListRelationFilter
@@ -7007,6 +7024,7 @@ export namespace Prisma {
     image?: SortOrderInput | SortOrder
     geniusLevel?: SortOrder
     joinDate?: SortOrder
+    passwordHash?: SortOrderInput | SortOrder
     _count?: UserCountOrderByAggregateInput
     _avg?: UserAvgOrderByAggregateInput
     _max?: UserMaxOrderByAggregateInput
@@ -7025,6 +7043,7 @@ export namespace Prisma {
     image?: StringNullableWithAggregatesFilter<"User"> | string | null
     geniusLevel?: IntWithAggregatesFilter<"User"> | number
     joinDate?: DateTimeWithAggregatesFilter<"User"> | Date | string
+    passwordHash?: StringNullableWithAggregatesFilter<"User"> | string | null
   }
 
   export type AccountWhereInput = {
@@ -7293,6 +7312,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountCreateNestedManyWithoutUserInput
     bookings?: BookingCreateNestedManyWithoutUserInput
     sessions?: SessionCreateNestedManyWithoutUserInput
@@ -7306,6 +7326,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     bookings?: BookingUncheckedCreateNestedManyWithoutUserInput
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
@@ -7319,6 +7340,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUpdateManyWithoutUserNestedInput
     bookings?: BookingUpdateManyWithoutUserNestedInput
     sessions?: SessionUpdateManyWithoutUserNestedInput
@@ -7332,6 +7354,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     bookings?: BookingUncheckedUpdateManyWithoutUserNestedInput
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
@@ -7345,6 +7368,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
   }
 
   export type UserUpdateManyMutationInput = {
@@ -7355,6 +7379,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type UserUncheckedUpdateManyInput = {
@@ -7365,6 +7390,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
   export type AccountCreateInput = {
@@ -7743,6 +7769,7 @@ export namespace Prisma {
     image?: SortOrder
     geniusLevel?: SortOrder
     joinDate?: SortOrder
+    passwordHash?: SortOrder
   }
 
   export type UserAvgOrderByAggregateInput = {
@@ -7757,6 +7784,7 @@ export namespace Prisma {
     image?: SortOrder
     geniusLevel?: SortOrder
     joinDate?: SortOrder
+    passwordHash?: SortOrder
   }
 
   export type UserMinOrderByAggregateInput = {
@@ -7767,6 +7795,7 @@ export namespace Prisma {
     image?: SortOrder
     geniusLevel?: SortOrder
     joinDate?: SortOrder
+    passwordHash?: SortOrder
   }
 
   export type UserSumOrderByAggregateInput = {
@@ -8655,6 +8684,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     bookings?: BookingCreateNestedManyWithoutUserInput
     sessions?: SessionCreateNestedManyWithoutUserInput
   }
@@ -8667,6 +8697,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     bookings?: BookingUncheckedCreateNestedManyWithoutUserInput
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8695,6 +8726,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     bookings?: BookingUpdateManyWithoutUserNestedInput
     sessions?: SessionUpdateManyWithoutUserNestedInput
   }
@@ -8707,6 +8739,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     bookings?: BookingUncheckedUpdateManyWithoutUserNestedInput
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
   }
@@ -8719,6 +8752,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountCreateNestedManyWithoutUserInput
     bookings?: BookingCreateNestedManyWithoutUserInput
   }
@@ -8731,6 +8765,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     bookings?: BookingUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8759,6 +8794,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUpdateManyWithoutUserNestedInput
     bookings?: BookingUpdateManyWithoutUserNestedInput
   }
@@ -8771,6 +8807,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     bookings?: BookingUncheckedUpdateManyWithoutUserNestedInput
   }
@@ -8783,6 +8820,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountCreateNestedManyWithoutUserInput
     sessions?: SessionCreateNestedManyWithoutUserInput
   }
@@ -8795,6 +8833,7 @@ export namespace Prisma {
     image?: string | null
     geniusLevel?: number
     joinDate?: Date | string
+    passwordHash?: string | null
     accounts?: AccountUncheckedCreateNestedManyWithoutUserInput
     sessions?: SessionUncheckedCreateNestedManyWithoutUserInput
   }
@@ -8823,6 +8862,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUpdateManyWithoutUserNestedInput
     sessions?: SessionUpdateManyWithoutUserNestedInput
   }
@@ -8835,6 +8875,7 @@ export namespace Prisma {
     image?: NullableStringFieldUpdateOperationsInput | string | null
     geniusLevel?: IntFieldUpdateOperationsInput | number
     joinDate?: DateTimeFieldUpdateOperationsInput | Date | string
+    passwordHash?: NullableStringFieldUpdateOperationsInput | string | null
     accounts?: AccountUncheckedUpdateManyWithoutUserNestedInput
     sessions?: SessionUncheckedUpdateManyWithoutUserNestedInput
   }
