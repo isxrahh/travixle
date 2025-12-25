@@ -26,9 +26,9 @@ const MidSection = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {weekendDeals.map((deal) => (
-              <Card className="rounded-3xl py-4 gap-0 w-78">
+              <Card key={deal.id} className="rounded-3xl py-4 gap-0 w-78">
                 <div
-                  key={deal.id}
+                  
                   className="group relative -top-[23.5px] rounded-t-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
                 >
                   <img
